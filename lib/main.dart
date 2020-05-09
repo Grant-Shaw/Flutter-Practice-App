@@ -20,6 +20,10 @@ class IdCard extends StatelessWidget{
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            CircleAvatar(
+              backgroundImage: AssetImage('assets/linked.jpg'),
+              radius: 40,
+            ),
             Text('Name',
             style: TextStyle(
               color: Colors.grey[400],
@@ -36,7 +40,7 @@ class IdCard extends StatelessWidget{
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 50),
             Text('Current Age',
             style: TextStyle(
               color: Colors.grey[400],
@@ -53,7 +57,7 @@ class IdCard extends StatelessWidget{
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 30.0),
+            SizedBox(height: 50.0),
             Row(
               children: <Widget>[
               Icon(
