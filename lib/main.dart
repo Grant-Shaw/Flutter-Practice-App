@@ -21,8 +21,8 @@ class IdCard extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             CircleAvatar(
-              backgroundImage: AssetImage('assets/linked.jpg'),
-              radius: 40,
+              backgroundImage: AssetImage('assets/linked.jpg'),                    // AssetImage('assets/linked.jpg'),
+              
             ),
             Text('Name',
             style: TextStyle(
