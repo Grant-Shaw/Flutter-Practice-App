@@ -30,6 +30,16 @@ class _IdCardState extends State<IdCard> {
         backgroundColor: Colors.amber,
         elevation: 0.0,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            coolnessNum += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.amberAccent,
+        foregroundColor: Colors.grey[850],
+      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
