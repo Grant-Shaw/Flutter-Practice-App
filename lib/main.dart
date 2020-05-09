@@ -16,8 +16,6 @@ class _IdCardState extends State<IdCard> {
   int coolnessNum = 0;
 
 
-
-
   //The Widget tree
 
   @override
@@ -32,7 +30,7 @@ class _IdCardState extends State<IdCard> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          setState(() {
+          setState(() {           //needed every time a value is changed
             coolnessNum += 1;
           });
         },
@@ -52,7 +50,7 @@ class _IdCardState extends State<IdCard> {
               ),
             ),
             Divider(
-              height: 90,
+              height: 30,
               color: Colors.blueGrey[600],
             ),
             Text('Name',
@@ -61,7 +59,7 @@ class _IdCardState extends State<IdCard> {
               fontSize: 15,
             )
             ),
-            SizedBox(height: 5.0),
+            SizedBox(height: 5.0),            
             Text(
                 'Grant',
                 style: TextStyle(
@@ -71,7 +69,7 @@ class _IdCardState extends State<IdCard> {
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 30),           
             Text('Current coolness level',
               style: TextStyle(
               color: Colors.blueGrey[400],
