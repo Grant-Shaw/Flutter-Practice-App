@@ -54,11 +54,27 @@ class IdCard extends StatelessWidget{
               ),
             ),
             SizedBox(height: 30.0),
-
-          ],
-          )
+            Row(
+              children: <Widget>[
+              Icon(
+                  Icons.email,
+                  color: Colors.amberAccent              
+              ),
+              SizedBox(width: 10.0), 
+              Text(
+                'aRandomemail@email.com',
+                style: TextStyle(
+                  color: Colors.amberAccent,
+                  fontSize: 15,
+                  letterSpacing: 1.0,
+                ),
+              ),
+            ], 
+            ), 
+          ],  
+          ),
            
-        )
+        ),
     
     );
   }
