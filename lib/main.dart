@@ -1,10 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() => runApp(MaterialApp(
   home: IdCard(),
 ));
 
-class IdCard extends StatelessWidget{
+class IdCard extends StatefulWidget{
+  @override
+  _IdCardState createState() => _IdCardState();
+}
+
+class _IdCardState extends State<IdCard> {
+
+
+  int coolnessNum = 0;
+
+
+
+
+  //The Widget tree
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -21,7 +36,7 @@ class IdCard extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
-              child: CircleAvatar(
+                child: CircleAvatar(
                 backgroundImage: AssetImage('assets/linked.jpg'),
                 radius: 50,                                
               ),
@@ -32,7 +47,7 @@ class IdCard extends StatelessWidget{
             ),
             Text('Name',
               style: TextStyle(
-              color: Colors.blueGrey[400],
+              color: Colors.blueGrey[400], 
               fontSize: 15,
             )
             ),
@@ -47,15 +62,15 @@ class IdCard extends StatelessWidget{
               ),
             ),
             SizedBox(height: 40),
-            Text('Current Age',
-            style: TextStyle(
+            Text('Current coolness level',
+              style: TextStyle(
               color: Colors.blueGrey[400],
               fontSize: 15,
             )
             ),
             SizedBox(height: 5.0),
             Text(
-              '27, I think',
+              '$coolnessNum',
               style: TextStyle(
                 color: Colors.amberAccent,
                 fontWeight: FontWeight.bold,
@@ -72,8 +87,8 @@ class IdCard extends StatelessWidget{
               ),
               SizedBox(width: 10.0), 
               Text(
-                'aRandomemail@email.com',
-                style: TextStyle(
+                  'aRandomemail@email.com',
+                  style: TextStyle(
                   color: Colors.amberAccent,
                   fontSize: 15,
                   letterSpacing: 1.0,
@@ -88,12 +103,12 @@ class IdCard extends StatelessWidget{
     
     );
   }
-
-
-
-
-
 }
+
+
+
+
+
 
 
   
