@@ -27,7 +27,7 @@ class IdCard extends StatelessWidget{
               ),
             ),
             Divider(
-              height: 60,
+              height: 90,
               color: Colors.blueGrey[600],
             ),
             Text('Name',
@@ -36,7 +36,7 @@ class IdCard extends StatelessWidget{
               fontSize: 15,
             )
             ),
-            SizedBox(height: 10.0),
+            SizedBox(height: 5.0),
             Text(
                 'Grant',
                 style: TextStyle(
@@ -46,14 +46,14 @@ class IdCard extends StatelessWidget{
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 40),
             Text('Current Age',
             style: TextStyle(
               color: Colors.blueGrey[400],
               fontSize: 15,
             )
             ),
-            SizedBox(height: 10.0),
+            SizedBox(height: 5.0),
             Text(
               '27, I think',
               style: TextStyle(
@@ -63,7 +63,7 @@ class IdCard extends StatelessWidget{
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 50.0),
+            SizedBox(height: 40.0),
             Row(
               children: <Widget>[
               Icon(
